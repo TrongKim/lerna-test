@@ -1,0 +1,20 @@
+{
+  "name": "@content/root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "craco": "^0.0.3",
+    "lerna": "^7.1.1",
+    "madge": "^6.1.0"
+  },
+  "scripts": {
+    "start": "lerna exec --scope @content/test -- yarn start"
+  },
+  "workspace": {
+    "packages": [
+      "packages/**"
+    ]
+  }
+}
